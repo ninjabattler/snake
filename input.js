@@ -40,6 +40,14 @@ const handleUserInput = (key) => {
     connection.write("Move: left");
   }
 
+  if (key === '\q') {
+    connection.write("Say: Hello");
+  }
+
+  if (key === '\e') {
+    connection.write("Say: MINE!");
+  }
+
 };
 
 module.exports = {setupInput};
