@@ -13,6 +13,14 @@ const connect = function() {
     console.log('[SERVER]> ' + data)
 
   })
+  // will run when connected to the server
+  conn.on('connect', (client)=>{
+
+    console.log('Connection has been established');
+
+    conn.write("Name: JRT");
+
+  })
   return conn;
 }
 
