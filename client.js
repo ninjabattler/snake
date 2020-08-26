@@ -20,6 +20,8 @@ const connect = function() {
 
     conn.write("Name: JRT");
 
+    //conn.write("Move: up");
+
   })
   return conn;
 }
